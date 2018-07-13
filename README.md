@@ -17,7 +17,7 @@ npm i angular4-paging  --save
 ```
 
 ## 使用说明
-###Import In AppModule
+### Import In AppModule
 ```
 import { PagingModule } from '../components/paging.module';
 
@@ -45,7 +45,7 @@ import { PagingModule } from '../components/paging.module';
 </app-paging>
 ```
 
-###And In Component.ts
+### And In Component.ts
 ```
   //当前的页面的位置
   private pageNum = 2;
@@ -83,22 +83,24 @@ import { PagingModule } from '../components/paging.module';
 
 ## Input Properties
 
+ 名称 | 类型 | 默认值 | 描述 
+------------ | -------------| ------------ | -------------
+pageNum | number|1 | 当前页面脚标
+pageSize | number |0 | 每页最多容纳数据量
+pageNumCount | number |0 | 数据总量
+isshowjump | boolean | true | 是否显示快捷跳转
+isshowtip | boolean | true | 是否显示数据详细说明
+fontcolor | string | #f60 |选中时的颜色，默认为桔色
 
-| 名称 | 类型 | 默认值 | 描述 
-| - | :-: | -: | 
-| pageNum | number | 1 | 当前页面脚标
-| pageSize| number | 0 |每页最多容纳数据量 
-| pageNumCount | number | 0 |数据总量
-| isshowjump | boolean | true |是否显示快捷跳转
-| isshowtip | boolean | true |是否显示数据详细说明
-| fontcolor | string | #f60 |选中时的颜色，默认为桔色
 
-##Output Events
+## Output Events
 
-| 事件名称 | 描述 
-| - | :-: | -: | 
-| firstpage() |跳转第一页
-| endpage(event) |跳转到最后一页
-| next() |下一页
-| jumpto(event) |跳转某一页
-| previous() |上一页
+ 事件名称 |  描述 
+------------ | -------------
+ firstpage() |跳转第一页
+ endpage(event) |跳转到最后一页
+ next() |下一页
+ jumpto(event) |跳转某一页
+ previous() |上一页
+
+
