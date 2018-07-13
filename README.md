@@ -30,8 +30,8 @@ import { PagingModule } from '../components/paging.module';
 })
 ```
 
-### Use In Templete
-
+### Templete
+#### html
 ```
 <app-paging
 [pageNum]="pageNum" 
@@ -45,7 +45,7 @@ import { PagingModule } from '../components/paging.module';
 </app-paging>
 ```
 
-### And In Component.ts
+#### component.ts
 ```
   //当前的页面的位置
   private pageNum = 2;
